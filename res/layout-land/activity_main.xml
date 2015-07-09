@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity" >
+
+    <!-- Titulo Inicio -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/titulogeneral" />
+    </LinearLayout>
+    <!-- ==================================================================== -->
+
+	<!-- Información Ofertas -->
+    <LinearLayout
+        android:id="@+id/ofertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/ofertas">
+        <TextView 
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+	        android:layout_width="220dp"
+	        android:fontFamily="snas-serif"
+	        android:layout_height="wrap_content"
+	        android:textColor="#fff"
+	        android:text=
+	        "Torta helada de fresa, sauco y durazno decorado con mouse y rellena con bizcocho de vainilla."/>
+        
+    </LinearLayout>	
+    <!-- ==================================================================== --> 	
+    
+    
+    <!-- Banner -->
+
+    <ImageView
+        android:id="@+id/slide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baner2" />
+    <!-- ==================================================================== -->
+
+
+    <!-- Botones del baner -->
+
+    <LinearLayout
+        android:id="@+id/menu_baner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/ofertas">
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prev" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/next" />
+    </LinearLayout>
+    <!-- ==================================================================== -->
+
+</RelativeLayout>

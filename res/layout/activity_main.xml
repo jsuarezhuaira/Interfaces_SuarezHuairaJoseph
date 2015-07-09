@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity" >
+    
+    <!-- Titulo Inicio -->
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true" 
+		android:layout_above="@+id/slide1">
+		
+     <ImageView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/titulogeneral" />      
+    </LinearLayout>
+	<!-- ==================================================================== -->
+	
+	<!-- Banner -->
+    <ImageView 
+        android:id="@+id/slide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baner1"
+        android:layout_centerInParent="true"/>	
+	<!-- ==================================================================== -->
+	
+    <!-- Botones del baner -->
+    <LinearLayout
+        android:id="@+id/menu_baner" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true" 
+		android:layout_below="@+id/slide1"
+        >
+    <ImageButton
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/prev" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/next" />        
+        
+    </LinearLayout>
+	<!-- ==================================================================== -->
+
+</RelativeLayout>
